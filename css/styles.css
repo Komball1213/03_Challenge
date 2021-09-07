@@ -1,0 +1,120 @@
+body {
+   background-color: hsl(0, 0%, 95%);
+   font-family: 'Lexend Deca', sans-serif;
+   Font-size: 15px;
+   text-align: center;
+   margin: 0;
+   height: 100vh;
+   display: flex;
+   display: -webkit-flex;
+   flex-direction: column;
+   -webkit-flex-direction: column;
+   align-items: center;
+   -webkit-align-items: center;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 100px;
+}
+.column-title {
+    
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 34px;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    margin-bottom: 15px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+ height: 100vh;
+    max-width: 800px;
+}
+
+.column {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 33%;
+    padding: 50px 30px;
+    
+}
+
+.orange {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+.orange .btn {
+    color: hsl(31, 77%, 52%);
+}
+
+.blue {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.blue .btn {
+    color: hsl(184, 100%, 22%);
+}
+
+.green {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+.green .btn {
+    color: hsl(179, 100%, 13%);
+}
+
+.btn {
+    border-radius: 50px;
+    
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 15px 40px;
+    border: solide;
+    border-width: 2px;
+    border-color: transparent;
+}
+
+.btn:hover {
+color: hsl(0, 0%, 95%);
+background-color: transparent;
+border: solid;
+border-width: 2px;
+border-color: hsl(0, 0%, 95%);
+}
+
+.attribution {
+    padding: 50px;
+}
+
+@media screen and (max-width: 500px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 10vh;
+    }
+    
+    .column {
+        width: 80%;
+        padding: 50px 50px;
+    }
+
+    .green {
+        border-radius: 0 0px 10px 10px;
+    }
+
+    .orange {
+        border-radius: 10px 10px 0 0;
+    }
+}
